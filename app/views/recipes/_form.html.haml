@@ -6,10 +6,12 @@
         prevented this recipe from saving
       %ul
         - @recipe.errors.full_messages.each do |msg|
-          %li=msg
+          %li = msg
 
-    .panel-body
+  .panel-body
+    %p
       = f.input :title, input_html: { class: 'form-control' }
+    %p
       = f.input :description, input_html: { class: 'form-control' }
 
-    = f.button :submit, class: 'btn btn-primary'
+  = f.button :submit, class: 'btn btn-primary'
