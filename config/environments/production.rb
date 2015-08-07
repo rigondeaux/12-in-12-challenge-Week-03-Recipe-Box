@@ -1,5 +1,6 @@
 Rails.application.configure do
 
+  # for devise
   config.action_mailer.default_url_options = { host: 'https://calm-beyond-8561.herokuapp.com' }
 
   # Settings specified here will take precedence over those in config/application.rb.
